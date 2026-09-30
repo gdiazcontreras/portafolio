@@ -13,3 +13,17 @@
 @media(max-width:575.98px){:root{--header-height:70px}.container{width:calc(100% - 40px)}.section{padding-block:58px}.hero{padding-top:43px;padding-bottom:80px}.hero .eyebrow{font-size:.55rem;letter-spacing:.12em}.intro{font-size:.92rem}h1{font-size:clamp(2.45rem,9vw,3.3rem)}.mobile-break{display:block}.hero-description{font-size:.87rem}.hero-art{display:none}.hero-actions{gap:21px}.button{font-size:.78rem;padding:10px 17px;gap:18px}.text-link{font-size:.76rem}.scroll-hint{bottom:20px}.about-grid,.skills-grid{grid-template-columns:1fr;gap:28px}.about-copy p{font-size:.87rem}.section-heading{display:block;margin-bottom:28px}.section-heading>p{margin-top:18px;max-width:none}.section-heading>p br{display:none}.experience-card{gap:17px}.experience-card h3{font-size:1.04rem}.experience-arrow{display:none}.organization-detail{font-size:.78rem}.project-card{display:flex}.project-preview{height:200px;min-height:0;border-right:0;border-bottom:1px solid var(--border)}.project-body{padding:25px}.project-body>p{font-size:.85rem}.contact-actions{gap:20px}.contact-actions .button{width:100%}.contact-panel{padding:43px 22px}.contact-panel>p br{display:none}.site-footer{flex-wrap:wrap;gap:17px}.site-footer>div{width:100%}.back-top{margin-left:auto}.eyebrow{margin-bottom:18px}}
 /* El contenido permanece visible sin animación ni JavaScript. */
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}.project-card:hover,.button-primary:hover{transform:none}}
+
+/* Caso de estudio: ajustes exclusivos de la nueva página sobre componentes existentes. */
+.study-page .study-intro{max-width:1180px;display:grid;grid-template-columns:minmax(0,1fr);gap:40px;align-items:center}
+.study-page .study-intro-copy{min-width:0}
+.study-page .study-intro-image{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:8/5;object-fit:contain;border:1px solid var(--border);border-radius:var(--radius)}
+@media(min-width:992px){.study-page .study-intro{grid-template-columns:repeat(2,minmax(0,1fr));gap:48px}}
+.study-page .study-lead{max-width:720px;font-size:1.05rem;margin-bottom:26px}
+.study-page .study-list{padding-left:20px;margin:0;color:var(--muted);font-size:.92rem}
+.study-page .study-list li+li{margin-top:12px}
+.study-page .study-list li::marker{color:var(--accent)}
+.study-page .study-tags{align-content:start;align-items:start}
+.study-page .skill-panel p:last-child{margin-bottom:0}
+.study-page code{color:var(--accent-bright)}
+@media(max-width:575.98px){.study-page h1{font-size:clamp(2.45rem,9vw,3.3rem)}.study-page .study-lead,.study-page .study-list{font-size:.87rem}}
