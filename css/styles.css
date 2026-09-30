@@ -27,3 +27,15 @@
 .study-page .skill-panel p:last-child{margin-bottom:0}
 .study-page code{color:var(--accent-bright)}
 @media(max-width:575.98px){.study-page h1{font-size:clamp(2.45rem,9vw,3.3rem)}.study-page .study-lead,.study-page .study-list{font-size:.87rem}}
+
+/* Fotografía y composición limitadas a Sobre mí del portafolio. */
+#sobre-mi .about-profile{grid-template-columns:240px minmax(0,1fr);column-gap:48px;row-gap:36px;align-items:center}
+#sobre-mi .about-profile-heading{grid-column:1/-1}
+#sobre-mi .about-portrait{display:block;width:100%;max-width:240px;height:auto;aspect-ratio:1;object-fit:cover;object-position:center center;justify-self:center;border:1px solid var(--border);border-radius:50%}
+#sobre-mi .about-copy{min-width:0}
+@media(max-width:991.98px){#sobre-mi .about-profile{grid-template-columns:minmax(0,1fr);gap:28px}#sobre-mi .about-portrait{max-width:180px}}
+
+/* Indicadores de Sobre mí: una fila editorial, sin tarjetas. */
+#sobre-mi .about-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:24px}
+#sobre-mi .about-metric{display:flex;flex-direction:column;gap:8px;min-width:0;overflow-wrap:break-word}
+@media(max-width:575.98px){#sobre-mi .about-metrics{grid-template-columns:minmax(0,1fr)}}
